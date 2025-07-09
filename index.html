@@ -5,14 +5,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Mutual Fund Calculator</h1>
-  <label>Monthly Investment (₹): <input type="number" id="amount" /></label><br>
-  <label>Rate of Return (%): <input type="number" id="rate" /></label><br>
-  <label>Investment Period (months): <input type="number" id="months" /></label><br>
-  <button onclick="calculateSIP()">Calculate</button>
-  <h2 id="result">Total Return: ₹0</h2>
-
+  <div class="container">
+    <h1>Indian Mutual Fund Analysis</h1>
+    <select id="fundSelector"></select>
+    <button onclick="loadFundData()">Analyze</button>
+    <div id="fundDetails"></div>
+    <canvas id="navChart"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
-
